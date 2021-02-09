@@ -736,5 +736,68 @@ trait Helper
 			}
 		} );
 	}
+
+	public function print_template_views(){
+        $button_test = ( HelperClass::get_local_plugin_data( 'templately/templately.php' ) === false )?'Install Templately':'Activate Templately ';
+        ?>
+        <div id="eael-promo-temp-wrap" class="eael-promo-temp-wrap" style="display: none">
+            <div class="eael-promo-temp-wrapper">
+                <div class="eael-promo-temp">
+                    <a href="#" class="eael-promo-temp__times">
+                        <i class="eicon-close" aria-hidden="true" title="Close"></i>
+                    </a>
+                    <div class="eael-promo-temp--left">
+                        <div class="eael-promo-temp__logo">
+                            <img src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/templately/logo.svg'; ?>" alt="">
+                        </div>
+                        <ul class="eael-promo-temp__feature__list">
+                            <li><?php _e('1,000+ Stunning Templates','essential-addons-for-elementor-lite'); ?></li>
+                            <li><?php _e('Supports Elementor & Gutenberg','essential-addons-for-elementor-lite'); ?></li>
+                            <li><?php _e('Powering up 17,000+ Websites','essential-addons-for-elementor-lite'); ?></li>
+                            <li><?php _e('Cloud Collaboration with Team','essential-addons-for-elementor-lite'); ?></li>
+                        </ul>
+                        <form class="eael-promo-temp__form">
+                            <label>
+                                <input type="radio" value="install" class="eael-temp-promo-confirmation" name='eael-promo-temp__radio' checked>
+                                <span><?php echo $button_test; ?></span>
+                            </label>
+                            <label>
+                                <input type="radio" value="dnd" class="eael-temp-promo-confirmation" name='eael-promo-temp__radio'>
+                                <span><?php _e('Don’t Show This Again','essential-addons-for-elementor-lite'); ?></span>
+                            </label>
+                        </form>
+
+                        <?php if ( HelperClass::get_local_plugin_data( 'templately/templately.php' ) === false ) { ?>
+                            <button class="wpdeveloper-plugin-installer" data-action="install"
+                               data-slug="<?php echo 'templately'; ?>"><?php _e( 'Install Templately', 'essential-addons-for-elementor-lite' ); ?></button>
+                        <?php } else { ?>
+                            <?php if ( is_plugin_active( 'templately/templately.php' ) ) { ?>
+                                <button class="wpdeveloper-plugin-installer"><?php _e( 'Activated Templately', 'essential-addons-for-elementor-lite' ); ?></button>
+                            <?php } else { ?>
+                                <button class="wpdeveloper-plugin-installer" data-action="activate"
+                                   data-basename="<?php echo 'templately/templately.php'; ?>"><?php _e( 'Activate Templately', 'essential-addons-for-elementor-lite' ); ?></button>
+                            <?php } ?>
+                        <?php } ?>
+                        <button class="eael-prmo-status-submit" style="display: none"><?php _e('Submit','essential-addons-for-elementor-lite') ?></button>
+                    </div>
+                    <div class="eael-promo-temp--right">
+                        <img src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/templately/templates-edit.jpg'; ?>" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+    }
+
+    public function templately_promo_status() {
+        check_ajax_referer( 'essential-addons-elementor', 'security' );
+        $status = update_option( 'eael_templately_promo_hide', true );
+        if ( $status ) {
+            wp_send_json_success();
+        } else {
+            wp_send_json_error();
+        }
+    }
+	
 }
 
