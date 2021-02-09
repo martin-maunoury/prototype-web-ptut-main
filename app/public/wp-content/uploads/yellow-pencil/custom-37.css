@@ -23,7 +23,7 @@
 /*-----------------------------------------------*/
 body #masthead{
 	margin: 0 auto;
-	background-color:#000000;
+	background-color:#FFFFFF;
 	height:75px;
 }
 
@@ -161,7 +161,7 @@ body.home #page #masthead .storefront-primary-navigation .col-full #site-navigat
 
 body.home #masthead{
 	margin: 0 auto;
-	background-color:#413e3e;
+	background-color:#413f3f;
 	height:75px;
 }
 
@@ -261,6 +261,10 @@ body.page-id-6 #site-navigation .menu ul{
 	position:relative;
 	top:0px;
 	left:-26px;
+}
+
+body.page-id-6 #masthead{
+	background-color: black;
 }
 
 @media (min-width:768px){
