@@ -56,14 +56,14 @@ ainsi que d'intégrer le module Visa/Mastercard et Paypal pour le panier
 
 ## Utilisation de GitHub
 
-Difficultés:
+**Difficultés:**
 
 Travailler sur Wordpress à l'aide de l'outil GitHub n'est pas quelque chose de facile à la base puisque pas conçu pour "normalement" la mise en place de ce système était donc compliquée étant donné de notre faible connaissance de cet outil incontournable de développement
 
 l'utilisation   en elle même une fois le projet bien mis en place afin d'être rigoureux et de ne pas se perdre rapidement (le début est long mais une fois le travail mis en place de manière propre cela facilite énormément la mise en commun des deux travaux que l'on fait en simultané sur Wordpress 
 
 
-Solutions:
+**Solutions:**
 
 L'avantage de Git/GitHub est d'abord sa communauté énorme ainsi que les solution qui en découlent pour s'adapter a toute sorte de problématique
 nous a permis de nous documenter et de rapidement comprendre qu'il existe tout un tas de solutions.
