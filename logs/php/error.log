@@ -17,3 +17,24 @@
 [09-Feb-2021 17:11:04 UTC] PHP  15. spl_autoload_call() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/utils-wp.php:138
 [09-Feb-2021 17:11:04 UTC] PHP  16. Composer\Autoload\ClassLoader->loadClass() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/utils-wp.php:138
 [09-Feb-2021 17:11:04 UTC] PHP  17. Composer\Autoload\includeFile() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/composer/ClassLoader.php:322
+[10-Feb-2021 17:23:54 UTC] PHP Fatal error:  Uncaught WCPayPalPlus\Service\Exception\NameNotFound: There is neither a value or service named 'WCPayPalPlus\Uninstall\Uninstaller'. in C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Exception\NameNotFound.php:23
+Stack trace:
+#0 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Container.php(115): WCPayPalPlus\Service\Exception\NameNotFound::forName('WCPayPalPlus\\Un...')
+#1 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\uninstall.php(26): WCPayPalPlus\Service\Container->get('WCPayPalPlus\\Un...')
+#2 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\includes\plugin.php(1261): include_once('C:\\Users\\marti\\...')
+#3 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\includes\plugin.php(967): uninstall_plugin('woo-paypalplus/...')
+#4 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\ in C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Exception\NameNotFound.php on line 23
+[10-Feb-2021 17:24:05 UTC] PHP Fatal error:  Uncaught WCPayPalPlus\Service\Exception\NameNotFound: There is neither a value or service named 'WCPayPalPlus\Uninstall\Uninstaller'. in C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Exception\NameNotFound.php:23
+Stack trace:
+#0 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Container.php(115): WCPayPalPlus\Service\Exception\NameNotFound::forName('WCPayPalPlus\\Un...')
+#1 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\uninstall.php(26): WCPayPalPlus\Service\Container->get('WCPayPalPlus\\Un...')
+#2 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\includes\plugin.php(1261): include_once('C:\\Users\\marti\\...')
+#3 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\includes\plugin.php(967): uninstall_plugin('woo-paypalplus/...')
+#4 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\ in C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Exception\NameNotFound.php on line 23
+[10-Feb-2021 17:24:14 UTC] PHP Fatal error:  Uncaught WCPayPalPlus\Service\Exception\NameNotFound: There is neither a value or service named 'WCPayPalPlus\Uninstall\Uninstaller'. in C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Exception\NameNotFound.php:23
+Stack trace:
+#0 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Container.php(115): WCPayPalPlus\Service\Exception\NameNotFound::forName('WCPayPalPlus\\Un...')
+#1 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\uninstall.php(26): WCPayPalPlus\Service\Container->get('WCPayPalPlus\\Un...')
+#2 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\includes\plugin.php(1261): include_once('C:\\Users\\marti\\...')
+#3 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\includes\plugin.php(967): uninstall_plugin('woo-paypalplus/...')
+#4 C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-admin\ in C:\Users\marti\Local Sites\prototype-web-ptut-main\app\public\wp-content\plugins\woo-paypalplus\src\Service\Exception\NameNotFound.php on line 23
