@@ -60,7 +60,7 @@ ainsi que d'intégrer le module Visa/Mastercard et Paypal pour le panier
 
 Travailler sur Wordpress à l'aide de l'outil GitHub n'est pas quelque chose de facile à la base puisque pas conçu pour "normalement" la mise en place de ce système était donc compliquée étant donné de notre faible connaissance de cet outil incontournable de développement
 
-l'utilisation   en elle même une fois le projet bien mis en place afin d'être rigoureux et de ne pas se perdre rapidement (le début est long mais une fois le travail mis en place de manière propre cela facilite énormément la mise en commun des deux travaux que l'on fait en simultané sur Wordpress 
+l'utilisation   en elle même une fois le projet bien mis en place afin d'être rigoureux et de ne pas se perdre rapidement (le début était complexe) mais une fois le travail mis en place de manière propre cela facilite énormément le regroupement et la sauvegarde des différentes versions des deux travaux que l'on fait en simultané sur Wordpress.
 
 
 **Solutions:**
